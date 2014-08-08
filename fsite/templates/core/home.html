@@ -66,8 +66,14 @@ input:focus{
 
 $(document).ready(function(){
     $("#id_item").focus();
+    $("#id_highlight").click(function(e){
+        e.preventDefault();
+        $(this).css('color','red')
+    });
+    $("a").click(function(){
+        $(this).unbind('click')
+    });
 });
-
 {% endblock %}
 
 

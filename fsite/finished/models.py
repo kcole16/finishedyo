@@ -17,6 +17,7 @@ class Item(models.Model):
 	date_created = models.DateTimeField(auto_now_add=True)
 	date_started = models.DateTimeField(null=True)
 	date_ended = models.DateTimeField(null=True)
+	time_to_complete = models.TimeField(null=True)
 
 
 

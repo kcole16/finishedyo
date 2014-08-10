@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+
+#id_button {
+  margin-right: auto;
+  margin-right: auto;
+  background-color: purple;
+  width: 50%;
+  height: 70px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+</style>
+    <div style="padding-top:50px" class="container">
+
+        <button id = "id_button" class = 'btn center-block' href="#" rel="yoauth" data-redirect-to="http://finishedyo.herokuapp.com/handle_yoauth/">Login with YoAuth</button>
+
+    </div>
+  </body>
+</html>
+
+{% endblock content %}
